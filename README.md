@@ -1,6 +1,6 @@
 #Metro map
 
-`git clone https://github.com/Wordpost/dev.git`
+`git clone https://github.com/Wordpost/metro-map.git`
 
 `npm i`
 
