@@ -1,7 +1,9 @@
 body {
-  min-height: 100%;
   height: auto !important;
+  min-height: 100%;
+  position: relative;
   &>.container {
     padding-top: 60px;
+    padding-bottom:80px;
   }
 }

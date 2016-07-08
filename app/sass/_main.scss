@@ -1,1 +1,80 @@
  @import "sprite";
+ /* карта метро */
+ #popup-metro-map {
+   font: 11px/12px Tahoma;
+   margin: 0 auto;
+   position: relative;
+   white-space: nowrap;
+   width: 804px;
+   height: 1047px;
+   button {
+     position: absolute;
+     margin: 0;
+     padding: 1px 1px 2px 2px;
+     font-size: 8px;
+     line-height: 10px;
+     width: 13px;
+     text-align: center;
+     color: #fff;
+     border: 0;
+     border-radius: 4px
+   }
+   input {
+     display: none;
+     &+label {
+       color: #444;
+       cursor: pointer;
+     }
+     &:checked+label i {
+       opacity: 1
+     }
+   }
+   label {
+     position: absolute;
+     margin: 0;
+     padding: 0;
+     color: #cba600
+   }
+   i {
+     display: block;
+     position: absolute;
+     top: -2px;
+     left: -1px;
+     z-index: 10;
+     width: 17px;
+     height: 17px;
+     font-size: 10px;
+     line-height: 13px;
+     text-align: center;
+     opacity: 0;
+     color: #fff;
+     background: #0092f2;
+     border: 2px solid #fff;
+     border-radius: 10px;
+     padding-left: 1px
+   }
+   span {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 14px;
+     padding: 1px 2px;
+     text-align: left;
+     font-weight: 400;
+     border-radius: 4px;
+     background: rgba(255, 255, 255, .5)
+   }
+ }
+ .alert-metro {
+   background-color: #f9f9f9;
+   border-radius: 2px;
+   color: #333;
+   float: left;
+   font-size: 12px;
+   margin: 0 5px 5px 0;
+   padding: 3px 5px;
+ }
+ .alert-metro .fa {
+   color: #337ab7;
+   margin-right: 5px;
+ }

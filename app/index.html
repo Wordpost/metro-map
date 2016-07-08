@@ -60,18 +60,998 @@
 		</header>
 		<!-- #header-->
 		<div class="container">
-		    <div class="row">
-		        <div class="col-md-4 animated fadeIn">
-		            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut velit hic repellat voluptatibus, libero eaque tenetur rem soluta vero adipisci tempora delectus alias sed deleniti reiciendis dolorum, officia cum facilis.
-		        </div>
-		        <div class="col-md-4 animated fadeIn">
-		            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut velit hic repellat voluptatibus, libero eaque tenetur rem soluta vero adipisci tempora delectus alias sed deleniti reiciendis dolorum, officia cum facilis.
-		        </div>
-		        <div class="col-md-4 animated fadeIn">
-		            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut velit hic repellat voluptatibus, libero eaque tenetur rem soluta vero adipisci tempora delectus alias sed deleniti reiciendis dolorum, officia cum facilis.
+		    <div class="clearfix" id="search-tags"></div>
+		    <div class="form-group">
+		        <button class="btn btn-primary btn-block btn-sm" type="submit" id="clean">Сбросить</button>
+		    </div>
+		    <div id="popup-metro-map-container">
+		        <div style="background-image: url(/images/img/metro29.png);" id="popup-metro-map">
+		            <button style="top: 116px; left: 663px; background: #F12B22;" line="1-1">1</button>
+		            <button style="top: 861px; left: 179px; background: #F12B22;" line="1-2">1</button>
+		            <button style="top: 90px; left: 224px; background: #4BB964;" line="2-1">2</button>
+		            <button style="top: 939px; left: 843px; background: #4BB964;" line="2-2">2</button>
+		            <button style="top: 127px; left: 0px; background: #0376BA;" line="3-1">3</button>
+		            <button style="top: 129px; left: 790px; background: #0376BA;" line="3-2">3</button>
+		            <button style="top: 329px; left: 28px; background: #16C7F6;" line="4-1">4</button>
+		            <button style="top: 376px; left: 137px; background: #16C7F6;" line="4-2">4</button>
+		            <button style="top: 231px; left: 474px; background: #8A4D34;" line="5">5</button>
+		            <button style="top: 1px; left: 552px; background: #F78432;" line="6-1">6</button>
+		            <button style="top: 928px; left: 337px; background: #F78432;" line="6-2">6</button>
+		            <button style="top: 91px; left: 112px; background: #974DA5;" line="7-1">7</button>
+		            <button style="top: 889px; left: 791px; background: #974DA5;" line="7-2">7</button>
+		            <button style="top: 365px; left: 791px; background: #FDCE31;" line="8">8</button>
+		            <button style="top: 431px; left: 102px; background: #FDCE31;" line="8a">8</button>
+		            <button style="top: 2px; left: 321px; background: #A8A5A7;" line="9-1">9</button>
+		            <button style="top: 968px; left: 426px; background: #A8A5A7;" line="9-2">9</button>
+		            <button style="top: 158px; left: 448px; background: #B6D648;" line="10-1">10</button>
+		            <button style="top: 921px; left: 752px; background: #B6D648;" line="10-2">10</button>
+		            <button style="top: 813px; left: 408px; background: #90CED9;" line="11">11</button>
+		            <button style="top: 788px; left: 595px; background: #90CED9;" line="11">11</button>
+		            <button style="top: 1033px; left: 232px; background: #A0AFE6;" line="12">12</button>
+		            <button style="top: 942px; left: 362px; background: #A0AFE6;" line="12">12</button>
+		            <button style="top: 134px; left: 346px; background: #A0AFE6;" line="13">13</button>
+		            <button style="top: 109px; left: 608px; background: #A0AFE6;" line="13">13</button>
+		            <input type="checkbox" id="metro1149" lines="1 1-1" value="1149" name="metro[]">
+		            <label style="top: 116px; left: 678px;" for="metro1149">
+		                <i class="fa fa-check"></i>
+		                <span style="left: 14px;">Бульвар Рокоссовского</span>
+		            </label>
+		            <input type="checkbox" id="metro1181" lines="1 1-1" value="1181" name="metro[]">
+		            <label style="top: 141px; left: 678px;" for="metro1181">
+		                <i class="fa fa-check"></i>
+		                <span>Черкизовская</span>
+		            </label>
+		            <input type="checkbox" id="metro1139" lines="1 1-1" value="1139" name="metro[]">
+		            <label style="top: 167px; left: 678px;" for="metro1139">
+		                <i class="fa fa-check"></i>
+		                <span>Преображенская<br>площадь</span>
+		            </label>
+		            <input type="checkbox" id="metro1138" lines="1 1-1" value="1138" name="metro[]">
+		            <label style="top: 210px; left: 678px;" for="metro1138">
+		                <i class="fa fa-check"></i>
+		                <span>Сокольники</span>
+		            </label>
+		            <input type="checkbox" id="metro1141" lines="1 1-1" value="1141" name="metro[]">
+		            <label style="top: 236px; left: 678px;" for="metro1141">
+		                <i class="fa fa-check"></i>
+		                <span>Красносельская</span>
+		            </label>
+		            <input type="checkbox" id="metro1145" lines="1 5" value="1145" name="metro[]">
+		            <label style="top: 280px; left: 651px;" for="metro1145">
+		                <i class="fa fa-check"></i>
+		                <i style="top: 24px;" class="fa fa-check"></i>
+		                <span style="top: 12px; left: 13px;">Комсомольская</span>
+		            </label>
+		            <input type="checkbox" id="metro1150" lines="1 0" value="1150" name="metro[]">
+		            <label style="top: 321px; left: 609px;" for="metro1150">
+		                <i class="fa fa-check"></i>
+		                <span>Красные ворота</span>
+		            </label>
+		            <input type="checkbox" id="metro1154" lines="1 0" value="1154" name="metro[]">
+		            <label style="top: 354px; left: 576px;" for="metro1154">
+		                <i class="fa fa-check"></i>
+		                <span>Чистые пруды</span>
+		            </label>
+		            <input type="checkbox" id="metro1160" lines="1 0" value="1160" name="metro[]">
+		            <label style="top: 395px; left: 535px;" for="metro1160">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: 4px;">Лубянка</span>
+		            </label>
+		            <input type="checkbox" id="metro1081" lines="1 0" value="1081" name="metro[]">
+		            <label style="top: 447px; left: 483px;" for="metro1081">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -10px; left: -65px;">Охотный ряд</span>
+		            </label>
+		            <input type="checkbox" id="metro1077" lines="1 0" value="1077" name="metro[]">
+		            <label style="top: 526px; left: 404px;" for="metro1077">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 8px; left: 13px;">Библиотека имени Ленина</span>
+		            </label>
+		            <input type="checkbox" id="metro1071" lines="1 0" value="1071" name="metro[]">
+		            <label style="top: 552px; left: 378px;" for="metro1071">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 6px; left: 13px;">Кропоткинская</span>
+		            </label>
+		            <input type="checkbox" id="metro1061" lines="1 5" value="1061" name="metro[]">
+		            <label style="top: 568px; left: 309px;" for="metro1061">
+		                <i class="fa fa-check"></i>
+		                <i style="top: 25px;" class="fa fa-check"></i>
+		                <span style="top: 13px; left: 14px;">Парк культуры</span>
+		            </label>
+		            <input type="checkbox" id="metro1056" lines="1 1-2" value="1056" name="metro[]">
+		            <label style="top: 610px; left: 246px;" for="metro1056">
+		                <i class="fa fa-check"></i>
+		                <span>Фрунзенская</span>
+		            </label>
+		            <input type="checkbox" id="metro1054" lines="1 1-2" value="1054" name="metro[]">
+		            <label style="top: 630px; left: 226px;" for="metro1054">
+		                <i class="fa fa-check"></i>
+		                <span>Спортивная</span>
+		            </label>
+		            <input type="checkbox" id="metro1053" lines="1 1-2" value="1053" name="metro[]">
+		            <label style="top: 650px; left: 206px;" for="metro1053">
+		                <i class="fa fa-check"></i>
+		                <span>Воробьевы горы</span>
+		            </label>
+		            <input type="checkbox" id="metro1057" lines="1 1-2" value="1057" name="metro[]">
+		            <label style="top: 701px; left: 194px;" for="metro1057">
+		                <i class="fa fa-check"></i>
+		                <span>Университет</span>
+		            </label>
+		            <input type="checkbox" id="metro1079" lines="1 1-2" value="1079" name="metro[]">
+		            <label style="top: 729px; left: 194px;" for="metro1079">
+		                <i class="fa fa-check"></i>
+		                <span>Проспект<br>Вернадского</span>
+		            </label>
+		            <input type="checkbox" id="metro1013" lines="1 1-2" value="1013" name="metro[]">
+		            <label style="top: 770px; left: 194px;" for="metro1013">
+		                <i class="fa fa-check"></i>
+		                <span>Юго-Западная</span>
+		            </label>
+		            <input type="checkbox" id="metro1012" lines="1 1-2" value="1012" name="metro[]">
+		            <label style="top: 801px; left: 194px;" for="metro1012">
+		                <i class="fa fa-check"></i>
+		                <span>Тропарево</span>
+		            </label>
+		            <input type="checkbox" id="metro1010" lines="1 1-2" value="1010" name="metro[]">
+		            <label style="top: 831px; left: 194px;" for="metro1010">
+		                <i class="fa fa-check"></i>
+		                <span>Румянцево</span>
+		            </label>
+		            <input type="checkbox" id="metro1011" lines="1 1-2" value="1011" name="metro[]">
+		            <label style="top: 861px; left: 194px;" for="metro1011">
+		                <i class="fa fa-check"></i>
+		                <span>Саларьево</span>
+		            </label>
+		            <input type="checkbox" id="metro1029" lines="2 2-1" value="1029" name="metro[]">
+		            <label style="top: 105px; left: 223px;" for="metro1029">
+		                <i class="fa fa-check"></i>
+		                <span>Речной вокзал</span>
+		            </label>
+		            <input type="checkbox" id="metro1027" lines="2 2-1" value="1027" name="metro[]">
+		            <label style="top: 130px; left: 223px;" for="metro1027">
+		                <i class="fa fa-check"></i>
+		                <span>Водный стадион</span>
+		            </label>
+		            <input type="checkbox" id="metro1026" lines="2 2-1" value="1026" name="metro[]">
+		            <label style="top: 155px; left: 223px;" for="metro1026">
+		                <i class="fa fa-check"></i>
+		                <span>Войковская</span>
+		            </label>
+		            <input type="checkbox" id="metro1086" lines="2 2-1" value="1086" name="metro[]">
+		            <label style="top: 183px; left: 223px;" for="metro1086">
+		                <i class="fa fa-check"></i>
+		                <span>Сокол</span>
+		            </label>
+		            <input type="checkbox" id="metro1084" lines="2 2-1" value="1084" name="metro[]">
+		            <label style="top: 209px; left: 223px;" for="metro1084">
+		                <i class="fa fa-check"></i>
+		                <span>Аэропорт</span>
+		            </label>
+		            <input type="checkbox" id="metro1082" lines="2 2-1" value="1082" name="metro[]">
+		            <label style="top: 260px; left: 246px;" for="metro1082">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -4px; left: 14px;">Динамо</span>
+		            </label>
+		            <input type="checkbox" id="metro1087" lines="2 5" value="1087" name="metro[]">
+		            <label style="top: 300px; left: 285px;" for="metro1087">
+		                <i class="fa fa-check"></i>
+		                <i style="top: 18px;" class="fa fa-check"></i>
+		                <span style="top: 9px; left: -64px;">Белорусская</span>
+		            </label>
+		            <input type="checkbox" id="metro1101" lines="2 0" value="1101" name="metro[]">
+		            <label style="top: 398px; left: 384px;" for="metro1101">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: -42px;">Тверская</span>
+		            </label>
+		            <input type="checkbox" id="metro1102" lines="2 0" value="1102" name="metro[]">
+		            <label style="top: 461px; left: 496px;" for="metro1102">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -10px; left: 11px;">Театральная</span>
+		            </label>
+		            <input type="checkbox" id="metro1131" lines="2 0" value="1131" name="metro[]">
+		            <label style="top: 564px; left: 566px;" for="metro1131">
+		                <i class="fa fa-check"></i>
+		                <span>Новокузнецкая</span>
+		            </label>
+		            <input type="checkbox" id="metro1120" lines="2 5" value="1120" name="metro[]">
+		            <label style="top: 656px; left: 567px;" for="metro1120">
+		                <i class="fa fa-check"></i>
+		                <i style="top: -18px; left: 18px;" class="fa fa-check"></i>
+		                <span style="top: -3px; left: 16px;">Павелецкая</span>
+		            </label>
+		            <input type="checkbox" id="metro1116" lines="2 2-2" value="1116" name="metro[]">
+		            <label style="top: 680px; left: 567px;" for="metro1116">
+		                <i class="fa fa-check"></i>
+		                <span>Автозаводская</span>
+		            </label>
+		            <input type="checkbox" id="metro1119" lines="2 2-2" value="1119" name="metro[]">
+		            <label style="top: 712px; left: 567px;" for="metro1119">
+		                <i class="fa fa-check"></i>
+		                <span>Технопарк</span>
+		            </label>
+		            <input type="checkbox" id="metro1130" lines="2 2-2" value="1130" name="metro[]">
+		            <label style="top: 745px; left: 567px;" for="metro1130">
+		                <i class="fa fa-check"></i>
+		                <span>Коломенская</span>
+		            </label>
+		            <input type="checkbox" id="metro1111" lines="2 2-2 11" value="1111" name="metro[]">
+		            <label style="top: 774px; left: 566px;" for="metro1111">
+		                <i class="fa fa-check"></i>
+		                <i style="top: 13px; left: 13px;" class="fa fa-check"></i>
+		                <span style="top: 0px; left: 14px;">Каширская</span>
+		            </label>
+		            <input type="checkbox" id="metro1109" lines="2 2-2" value="1109" name="metro[]">
+		            <label style="top: 817px; left: 567px;" for="metro1109">
+		                <i class="fa fa-check"></i>
+		                <span>Кантемировская</span>
+		            </label>
+		            <input type="checkbox" id="metro1107" lines="2 2-2" value="1107" name="metro[]">
+		            <label style="top: 845px; left: 567px;" for="metro1107">
+		                <i class="fa fa-check"></i>
+		                <span>Царицыно</span>
+		            </label>
+		            <input type="checkbox" id="metro1108" lines="2 2-2" value="1108" name="metro[]">
+		            <label style="top: 875px; left: 567px;" for="metro1108">
+		                <i class="fa fa-check"></i>
+		                <span>Орехово</span>
+		            </label>
+		            <input type="checkbox" id="metro1110" lines="2 2-2" value="1110" name="metro[]">
+		            <label style="top: 916px; left: 576px;" for="metro1110">
+		                <i class="fa fa-check"></i>
+		                <span>Домодедовская</span>
+		            </label>
+		            <input type="checkbox" id="metro1166" lines="2 2-2" value="1166" name="metro[]">
+		            <label style="top: 939px; left: 695px;" for="metro1166">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: -62px;">Красногвардейская</span>
+		            </label>
+		            <input type="checkbox" id="metro1164" lines="2 2-2" value="1164" name="metro[]">
+		            <label style="top: 939px; left: 748px;" for="metro1164">
+		                <i class="fa fa-check"></i>
+		                <span>Алма-Атинская</span>
+		            </label>
+		            <input type="checkbox" id="metro1008" lines="3 3-1" value="1008" name="metro[]">
+		            <label style="top: 142px;" for="metro1008">
+		                <i class="fa fa-check"></i>
+		                <span>Пятницкое шоссе</span>
+		            </label>
+		            <input type="checkbox" id="metro1009" lines="3 3-1" value="1009" name="metro[]">
+		            <label style="top: 176px;" for="metro1009">
+		                <i class="fa fa-check"></i>
+		                <span>Митино</span>
+		            </label>
+		            <input type="checkbox" id="metro1007" lines="3 3-1" value="1007" name="metro[]">
+		            <label style="top: 198px;" for="metro1007">
+		                <i class="fa fa-check"></i>
+		                <span>Волоколамская</span>
+		            </label>
+		            <input type="checkbox" id="metro1006" lines="3 3-1" value="1006" name="metro[]">
+		            <label style="top: 221px;" for="metro1006">
+		                <i class="fa fa-check"></i>
+		                <span>Мякинино</span>
+		            </label>
+		            <input type="checkbox" id="metro1023" lines="3 3-1" value="1023" name="metro[]">
+		            <label style="top: 243px;" for="metro1023">
+		                <i class="fa fa-check"></i>
+		                <span>Строгино</span>
+		            </label>
+		            <input type="checkbox" id="metro1020" lines="3 3-1" value="1020" name="metro[]">
+		            <label style="top: 265px;" for="metro1020">
+		                <i class="fa fa-check"></i>
+		                <span>Крылатское</span>
+		            </label>
+		            <input type="checkbox" id="metro1017" lines="3 3-1" value="1017" name="metro[]">
+		            <label style="top: 287px;" for="metro1017">
+		                <i class="fa fa-check"></i>
+		                <span>Молодежная</span>
+		            </label>
+		            <input type="checkbox" id="metro1014" lines="3 3-1 4 4-1" value="1014" name="metro[]">
+		            <label style="top: 315px;" for="metro1014">
+		                <i class="fa fa-check"></i>
+		                <i style="top: 14px; left: 12px;" class="fa fa-check"></i>
+		                <span style="left: 14px;">Кунцевская</span>
+		            </label>
+		            <input type="checkbox" id="metro1015" lines="3 3-1" value="1015" name="metro[]">
+		            <label style="top: 491px; left: 31px;" for="metro1015">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: -20px; text-align: center;">Славянский<br>бульвар</span>
+		            </label>
+		            <input type="checkbox" id="metro1065" lines="3 3-1 8a 8-2" value="1065" name="metro[]">
+		            <label style="top: 492px; left: 99px;" for="metro1065">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: -10px;">Парк Победы</span>
+		            </label>
+		            <input type="checkbox" id="metro1062" lines="3 4 5" value="1062" name="metro[]">
+		            <label style="top: 492px; left: 223px;" for="metro1062">
+		                <i class="fa fa-check"></i>
+		                <i style="top: -18px; left: 30px;" class="fa fa-check"></i>
+		                <i style="top: -35px;" class="fa fa-check"></i>
+		                <span style="top: -18px; left: -21px;">Киевская</span>
+		            </label>
+		            <input type="checkbox" id="metro1067" lines="3 4 0" value="1067" name="metro[]">
+		            <label style="top: 492px; left: 308px;" for="metro1067">
+		                <i class="fa fa-check"></i>
+		                <i style="top: -35px;" class="fa fa-check"></i>
+		                <span style="top: 14px; left: -26px;">Смоленская</span>
+		                <span style="top: -49px; left: -26px;">Смоленская</span>
+		            </label>
+		            <input type="checkbox" id="metro1075" lines="3 4 0" value="1075" name="metro[]">
+		            <label style="top: 491px; left: 384px;" for="metro1075">
+		                <i class="fa fa-check"></i>
+		                <i style="top: -23px; left: -44px;" class="fa fa-check"></i>
+		                <span style="top: -33px; left: -32px;">Арбатская</span>
+		                <span style="top: -13px; left: 6px;">Арбатская</span>
+		            </label>
+		            <input type="checkbox" id="metro1156" lines="3 5" value="1156" name="metro[]">
+		            <label style="top: 390px; left: 681px;" for="metro1156">
+		                <i class="fa fa-check"></i>
+		                <i style="top: 14px; left: 14px;" class="fa fa-check"></i>
+		                <span style="top: -2px; left: 18px;">Курская</span>
+		            </label>
+		            <input type="checkbox" id="metro1146" lines="3 3-2" value="1146" name="metro[]">
+		            <label style="top: 338px; left: 735px;" for="metro1146">
+		                <i class="fa fa-check"></i>
+		                <span>Бауманская</span>
+		            </label>
+		            <input type="checkbox" id="metro1143" lines="3 3-2" value="1143" name="metro[]">
+		            <label style="top: 304px; left: 769px;" for="metro1143">
+		                <i class="fa fa-check"></i>
+		                <span>Электрозаводская</span>
+		            </label>
+		            <input type="checkbox" id="metro1147" lines="3 3-2" value="1147" name="metro[]">
+		            <label style="top: 265px; left: 790px;" for="metro1147">
+		                <i class="fa fa-check"></i>
+		                <span>Семеновская</span>
+		            </label>
+		            <input type="checkbox" id="metro1182" lines="3 3-2" value="1182" name="metro[]">
+		            <label style="top: 235px; left: 790px;" for="metro1182">
+		                <i class="fa fa-check"></i>
+		                <span>Партизанская</span>
+		            </label>
+		            <input type="checkbox" id="metro1180" lines="3 3-2" value="1180" name="metro[]">
+		            <label style="top: 205px; left: 790px;" for="metro1180">
+		                <i class="fa fa-check"></i>
+		                <span>Измайловская</span>
+		            </label>
+		            <input type="checkbox" id="metro1178" lines="3 3-2" value="1178" name="metro[]">
+		            <label style="top: 175px; left: 790px;" for="metro1178">
+		                <i class="fa fa-check"></i>
+		                <span>Первомайская</span>
+		            </label>
+		            <input type="checkbox" id="metro1179" lines="3 3-2" value="1179" name="metro[]">
+		            <label style="top: 143px; left: 790px;" for="metro1179">
+		                <i class="fa fa-check"></i>
+		                <span>Щелковская</span>
+		            </label>
+		            <input type="checkbox" id="metro1137" lines="3 0" value="1137" name="metro[]">
+		            <label style="top: 473px; left: 509px;" for="metro1137">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: -45px;">Площадь революции</span>
+		            </label>
+		            <input type="checkbox" id="metro1016" lines="4 4-1" value="1016" name="metro[]">
+		            <label style="top: 351px; left: 12px;" for="metro1016">
+		                <i class="fa fa-check"></i>
+		                <span>Пионерская</span>
+		            </label>
+		            <input type="checkbox" id="metro1018" lines="4 4-1" value="1018" name="metro[]">
+		            <label style="top: 374px; left: 12px;" for="metro1018">
+		                <i class="fa fa-check"></i>
+		                <span>Филевский парк</span>
+		            </label>
+		            <input type="checkbox" id="metro1019" lines="4 4-1" value="1019" name="metro[]">
+		            <label style="top: 397px; left: 12px;" for="metro1019">
+		                <i class="fa fa-check"></i>
+		                <span>Багратионовская</span>
+		            </label>
+		            <input type="checkbox" id="metro1073" lines="4 4-1" value="1073" name="metro[]">
+		            <label style="top: 420px; left: 12px;" for="metro1073">
+		                <i class="fa fa-check"></i>
+		                <span>Фили</span>
+		            </label>
+		            <input type="checkbox" id="metro1063" lines="4 4-1" value="1063" name="metro[]">
+		            <label style="top: 457px; left: 52px;" for="metro1063">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: -24px;">Кутузовская</span>
+		            </label>
+		            <input type="checkbox" id="metro1058" lines="4 4-1" value="1058" name="metro[]">
+		            <label style="top: 457px; left: 132px;" for="metro1058">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: -15px;">Студенческая</span>
+		            </label>
+		            <input type="checkbox" id="metro1078" lines="4 0" value="1078" name="metro[]">
+		            <label style="top: 515px; left: 385px;" for="metro1078">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -5px; left: 14px;">Александровский сад</span>
+		            </label>
+		            <input type="checkbox" id="metro1148" lines="5 6" value="1148" name="metro[]">
+		            <label style="top: 232px; left: 552px;" for="metro1148">
+		                <i class="fa fa-check"></i>
+		                <i style="top: -18px;" class="fa fa-check"></i>
+		                <span style="top: -9px; left: 14px;">Проспект Мира</span>
+		            </label>
+		            <input type="checkbox" id="metro1121" lines="5 7" value="1121" name="metro[]">
+		            <label style="top: 546px; left: 674px;" for="metro1121">
+		                <i class="fa fa-check"></i>
+		                <i style="top: -13px; left: 13px;" class="fa fa-check"></i>
+		                <span style="top: -16px; left: -46px;">Таганская</span>
+		            </label>
+		            <input type="checkbox" id="metro1128" lines="5" value="1128" name="metro[]">
+		            <label style="top: 659px; left: 423px;" for="metro1128">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 4px; left: -78px;">Добрынинская</span>
+		            </label>
+		            <input type="checkbox" id="metro1064" lines="5 6" value="1064" name="metro[]">
+		            <label style="top: 635px; left: 361px;" for="metro1064">
+		                <i class="fa fa-check"></i>
+		                <i style="top: -19px;" class="fa fa-check"></i>
+		                <span style="top: -10px; left: 13px;">Октябрьская</span>
+		            </label>
+		            <input type="checkbox" id="metro1098" lines="5" value="1098" name="metro[]">
+		            <label style="top: 395px; left: 254px;" for="metro1098">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -2px; left: 16px;">Краснопресненская</span>
+		            </label>
+		            <input type="checkbox" id="metro1090" lines="5" value="1090" name="metro[]">
+		            <label style="top: 250px; left: 356px;" for="metro1090">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: -2px;">Новослободская</span>
+		            </label>
+		            <input type="checkbox" id="metro1161" lines="6 6-1" value="1161" name="metro[]">
+		            <label style="left: 567px;" for="metro1161">
+		                <i class="fa fa-check"></i>
+		                <span>Медведково</span>
+		            </label>
+		            <input type="checkbox" id="metro1162" lines="6 6-1" value="1162" name="metro[]">
+		            <label style="top: 24px; left: 567px;" for="metro1162">
+		                <i class="fa fa-check"></i>
+		                <span>Бабушкинская</span>
+		            </label>
+		            <input type="checkbox" id="metro1163" lines="6 6-1" value="1163" name="metro[]">
+		            <label style="top: 49px; left: 567px;" for="metro1163">
+		                <i class="fa fa-check"></i>
+		                <span>Свиблово</span>
+		            </label>
+		            <input type="checkbox" id="metro1158" lines="6 6-1" value="1158" name="metro[]">
+		            <label style="top: 74px; left: 566px;" for="metro1158">
+		                <i class="fa fa-check"></i>
+		                <span>Ботанический сад</span>
+		            </label>
+		            <input type="checkbox" id="metro1002" lines="13" value="1002" name="metro[]">
+		            <label style="top: 98px; left: 594px;" for="metro1002">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -4px; left: 13px;">Улица Сергея Эйзенштейна</span>
+		            </label>
+		            <input type="checkbox" id="metro1003" lines="13" value="1003" name="metro[]">
+		            <label style="top: 105px; left: 548px;" for="metro1003">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -24px; left: -58px; text-align: right;">Выставочный<br>центр</span>
+		            </label>
+		            <input type="checkbox" id="metro1144" lines="6 6-1" value="1144" name="metro[]">
+		            <label style="top: 125px; left: 566px;" for="metro1144">
+		                <i class="fa fa-check"></i>
+		                <span>ВДНХ</span>
+		            </label>
+		            <input type="checkbox" id="metro1140" lines="6 6-1" value="1140" name="metro[]">
+		            <label style="top: 153px; left: 566px;" for="metro1140">
+		                <i class="fa fa-check"></i>
+		                <span style="left: 14px;">Алексеевская</span>
+		            </label>
+		            <input type="checkbox" id="metro1142" lines="6 6-1" value="1142" name="metro[]">
+		            <label style="top: 183px; left: 566px;" for="metro1142">
+		                <i class="fa fa-check"></i>
+		                <span>Рижская</span>
+		            </label>
+		            <input type="checkbox" id="metro1151" lines="6 0" value="1151" name="metro[]">
+		            <label style="top: 274px; left: 515px;" for="metro1151">
+		                <i class="fa fa-check"></i>
+		                <span>Сухаревская</span>
+		            </label>
+		            <input type="checkbox" id="metro1153" lines="6 0" value="1153" name="metro[]">
+		            <label style="top: 355px; left: 553px;" for="metro1153">
+		                <i class="fa fa-check"></i>
+		                <span style="left: -71px;">Тургеневская</span>
+		            </label>
+		            <input type="checkbox" id="metro1136" lines="6 7 0" value="1136" name="metro[]">
+		            <label style="top: 467px; left: 603px;" for="metro1136">
+		                <i class="fa fa-check"></i>
+		                <i style="left: 19px;" class="fa fa-check"></i>
+		                <span style="top: 14px; left: -14px;">Китай-город</span>
+		            </label>
+		            <input type="checkbox" id="metro1132" lines="6 8 0" value="1132" name="metro[]">
+		            <label style="top: 573px; left: 544px;" for="metro1132">
+		                <i class="fa fa-check"></i>
+		                <i style="top: 13px; left: 14px;" class="fa fa-check"></i>
+		                <span style="top: 14px; left: -64px;">Третьяковская</span>
+		            </label>
+		            <input type="checkbox" id="metro1060" lines="6 6-2" value="1060" name="metro[]">
+		            <label style="top: 697px; left: 309px;" for="metro1060">
+		                <i class="fa fa-check"></i>
+		                <span>Шаболовская</span>
+		            </label>
+		            <input type="checkbox" id="metro1055" lines="6 6-2" value="1055" name="metro[]">
+		            <label style="top: 720px; left: 309px;" for="metro1055">
+		                <i class="fa fa-check"></i>
+		                <span>Ленинский проспект</span>
+		            </label>
+		            <input type="checkbox" id="metro1059" lines="6 6-2" value="1059" name="metro[]">
+		            <label style="top: 742px; left: 309px;" for="metro1059">
+		                <i class="fa fa-check"></i>
+		                <span>Академическая</span>
+		            </label>
+		            <input type="checkbox" id="metro1066" lines="6 6-2" value="1066" name="metro[]">
+		            <label style="top: 765px; left: 309px;" for="metro1066">
+		                <i class="fa fa-check"></i>
+		                <span>Профсоюзная</span>
+		            </label>
+		            <input type="checkbox" id="metro1074" lines="6 6-2" value="1074" name="metro[]">
+		            <label style="top: 788px; left: 309px;" for="metro1074">
+		                <i class="fa fa-check"></i>
+		                <span>Новые Черемушки</span>
+		            </label>
+		            <input type="checkbox" id="metro1046" lines="6 6-2" value="1046" name="metro[]">
+		            <label style="top: 810px; left: 309px;" for="metro1046">
+		                <i class="fa fa-check"></i>
+		                <span>Калужская</span>
+		            </label>
+		            <input type="checkbox" id="metro1041" lines="6 6-2" value="1041" name="metro[]">
+		            <label style="top: 833px; left: 309px;" for="metro1041">
+		                <i class="fa fa-check"></i>
+		                <span>Беляево</span>
+		            </label>
+		            <input type="checkbox" id="metro1038" lines="6 6-2" value="1038" name="metro[]">
+		            <label style="top: 855px; left: 309px;" for="metro1038">
+		                <i class="fa fa-check"></i>
+		                <span>Коньково</span>
+		            </label>
+		            <input type="checkbox" id="metro1045" lines="6 6-2" value="1045" name="metro[]">
+		            <label style="top: 879px; left: 309px;" for="metro1045">
+		                <i class="fa fa-check"></i>
+		                <span>Теплый стан</span>
+		            </label>
+		            <input type="checkbox" id="metro1040" lines="6 6-2" value="1040" name="metro[]">
+		            <label style="top: 902px; left: 309px;" for="metro1040">
+		                <i class="fa fa-check"></i>
+		                <span>Ясенево</span>
+		            </label>
+		            <input type="checkbox" id="metro1037" lines="6 6-2" value="1037" name="metro[]">
+		            <label style="top: 939px; left: 324px;" for="metro1037">
+		                <i class="fa fa-check"></i>
+		                <span style="left: -86px;">Новоясеневская</span>
+		            </label>
+		            <input type="checkbox" id="metro1028" lines="7 7-1" value="1028" name="metro[]">
+		            <label style="top: 105px; left: 111px;" for="metro1028">
+		                <i class="fa fa-check"></i>
+		                <span>Планерная</span>
+		            </label>
+		            <input type="checkbox" id="metro1030" lines="7 7-1" value="1030" name="metro[]">
+		            <label style="top: 129px; left: 111px;" for="metro1030">
+		                <i class="fa fa-check"></i>
+		                <span>Сходненская</span>
+		            </label>
+		            <input type="checkbox" id="metro1024" lines="7 7-1" value="1024" name="metro[]">
+		            <label style="top: 155px; left: 111px;" for="metro1024">
+		                <i class="fa fa-check"></i>
+		                <span>Тушинская</span>
+		            </label>
+		            <input type="checkbox" id="metro1022" lines="7 7-1" value="1022" name="metro[]">
+		            <label style="top: 182px; left: 111px;" for="metro1022">
+		                <i class="fa fa-check"></i>
+		                <span>Спартак</span>
+		            </label>
+		            <input type="checkbox" id="metro1021" lines="7 7-1" value="1021" name="metro[]">
+		            <label style="top: 209px; left: 111px;" for="metro1021">
+		                <i class="fa fa-check"></i>
+		                <span>Щукинская</span>
+		            </label>
+		            <input type="checkbox" id="metro1025" lines="7 7-1" value="1025" name="metro[]">
+		            <label style="top: 235px; left: 111px;" for="metro1025">
+		                <i class="fa fa-check"></i>
+		                <span>Октябрьское поле</span>
+		            </label>
+		            <input type="checkbox" id="metro1092" lines="7 7-1" value="1092" name="metro[]">
+		            <label style="top: 289px; left: 134px;" for="metro1092">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -5px; left: 14px;">Полежаевская</span>
+		            </label>
+		            <input type="checkbox" id="metro1089" lines="7 7-1" value="1089" name="metro[]">
+		            <label style="top: 313px; left: 157px;" for="metro1089">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 3px; left: -45px;">Беговая</span>
+		            </label>
+		            <input type="checkbox" id="metro1095" lines="7 7-1" value="1095" name="metro[]">
+		            <label style="top: 343px; left: 187px;" for="metro1095">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 2px; left: -87px;">Улица 1905 года</span>
+		            </label>
+		            <input type="checkbox" id="metro1097" lines="7 0" value="1097" name="metro[]">
+		            <label style="top: 378px; left: 271px;" for="metro1097">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -14px; left: 4px;">Баррикадная</span>
+		            </label>
+		            <input type="checkbox" id="metro1099" lines="7 0" value="1099" name="metro[]">
+		            <label style="top: 378px; left: 396px;" for="metro1099">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -14px; left: -24px;">Пушкинская</span>
+		            </label>
+		            <input type="checkbox" id="metro1159" lines="7 0" value="1159" name="metro[]">
+		            <label style="top: 378px; left: 518px;" for="metro1159">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 11px; left: -72px;">Кузнецкий мост</span>
+		            </label>
+		            <input type="checkbox" id="metro1117" lines="7 7-2" value="1117" name="metro[]">
+		            <label style="top: 596px; left: 750px;" for="metro1117">
+		                <i class="fa fa-check"></i>
+		                <span>Пролетарская</span>
+		            </label>
+		            <input type="checkbox" id="metro1115" lines="7 7-2" value="1115" name="metro[]">
+		            <label style="top: 623px; left: 778px;" for="metro1115">
+		                <i class="fa fa-check"></i>
+		                <span style="text-align: right; background: none;">Волгоградский<br>проспект</span>
+		            </label>
+		            <input type="checkbox" id="metro1124" lines="7 7-2" value="1124" name="metro[]">
+		            <label style="top: 663px; left: 790px;" for="metro1124">
+		                <i class="fa fa-check"></i>
+		                <span>Текстильщики</span>
+		            </label>
+		            <input type="checkbox" id="metro1173" lines="7 7-2" value="1173" name="metro[]">
+		            <label style="top: 695px; left: 790px;" for="metro1173">
+		                <i class="fa fa-check"></i>
+		                <span>Кузьминки</span>
+		            </label>
+		            <input type="checkbox" id="metro1171" lines="7" value="1171" name="metro[]">
+		            <label style="top: 727px; left: 790px;" for="metro1171">
+		                <i class="fa fa-check"></i>
+		                <span>Рязанский<br>проспект</span>
+		            </label>
+		            <input type="checkbox" id="metro1184" lines="7 7-2" value="1184" name="metro[]">
+		            <label style="top: 802px; left: 790px;" for="metro1184">
+		                <i class="fa fa-check"></i>
+		                <span>Лермонтовский<br>проспект</span>
+		            </label>
+		            <input type="checkbox" id="metro1186" lines="7 7-2" value="1186" name="metro[]">
+		            <label style="top: 842px; left: 790px;" for="metro1186">
+		                <i class="fa fa-check"></i>
+		                <span>Жулебино</span>
+		            </label>
+		            <input type="checkbox" id="metro1187" lines="7 7-2" value="1187" name="metro[]">
+		            <label style="top: 874px; left: 790px;" for="metro1187">
+		                <i class="fa fa-check"></i>
+		                <span>Котельники</span>
+		            </label>
+		            <input type="checkbox" id="metro1185" lines="8 8-1" value="1185" name="metro[]">
+		            <label style="top: 379px; left: 790px;" for="metro1185">
+		                <i class="fa fa-check"></i>
+		                <span>Новокосино</span>
+		            </label>
+		            <input type="checkbox" id="metro1176" lines="8 8-1" value="1176" name="metro[]">
+		            <label style="top: 402px; left: 790px;" for="metro1176">
+		                <i class="fa fa-check"></i>
+		                <span>Новогиреево</span>
+		            </label>
+		            <input type="checkbox" id="metro1175" lines="8 8-1" value="1175" name="metro[]">
+		            <label style="top: 425px; left: 790px;" for="metro1175">
+		                <i class="fa fa-check"></i>
+		                <span>Перово</span>
+		            </label>
+		            <input type="checkbox" id="metro1183" lines="8 8-1" value="1183" name="metro[]">
+		            <label style="top: 448px; left: 790px;" for="metro1183">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -3px; left: 14px;">Шоссе<br>Энтузиастов</span>
+		            </label>
+		            <input type="checkbox" id="metro1135" lines="8 8-1" value="1135" name="metro[]">
+		            <label style="top: 476px; left: 777px;" for="metro1135">
+		                <i class="fa fa-check"></i>
+		                <span>Авиамоторная</span>
+		            </label>
+		            <input type="checkbox" id="metro1127" lines="8 8-1" value="1127" name="metro[]">
+		            <label style="top: 495px; left: 757px;" for="metro1127">
+		                <i class="fa fa-check"></i>
+		                <span>Площадь Ильича</span>
+		            </label>
+		            <input type="checkbox" id="metro1122" lines="8" value="1122" name="metro[]">
+		            <label style="top: 557px; left: 696px;" for="metro1122">
+		                <i class="fa fa-check"></i>
+		                <span>Марксистская</span>
+		            </label>
+		            <input type="checkbox" id="metro1103" lines="9 9-1" value="1103" name="metro[]">
+		            <label style="top: 2px; left: 335px;" for="metro1103">
+		                <i class="fa fa-check"></i>
+		                <span>Алтуфьево</span>
+		            </label>
+		            <input type="checkbox" id="metro1104" lines="9 9-1" value="1104" name="metro[]">
+		            <label style="top: 21px; left: 335px;" for="metro1104">
+		                <i class="fa fa-check"></i>
+		                <span>Бибирево</span>
+		            </label>
+		            <input type="checkbox" id="metro1105" lines="9 9-1" value="1105" name="metro[]">
+		            <label style="top: 42px; left: 335px;" for="metro1105">
+		                <i class="fa fa-check"></i>
+		                <span>Отрадное</span>
+		            </label>
+		            <input type="checkbox" id="metro1106" lines="9 9-1" value="1106" name="metro[]">
+		            <label style="top: 63px; left: 335px;" for="metro1106">
+		                <i class="fa fa-check"></i>
+		                <span>Владыкино</span>
+		            </label>
+		            <input type="checkbox" id="metro1093" lines="9 9-1" value="1093" name="metro[]">
+		            <label style="top: 84px; left: 335px;" for="metro1093">
+		                <i class="fa fa-check"></i>
+		                <span>Петровско-Разумовская</span>
+		            </label>
+		            <input type="checkbox" id="metro1001" lines="9 9-1 13" value="1001" name="metro[]">
+		            <label style="top: 104px; left: 335px;" for="metro1001">
+		                <i class="fa fa-check"></i>
+		                <i style="top: 17px; left: 20px;" class="fa fa-check"></i>
+		                <span style="top: 2px; left: 18px;">Тимирязевская</span>
+		            </label>
+		            <input type="checkbox" id="metro1005" lines="13" value="1005" name="metro[]">
+		            <label style="top: 121px; left: 401px;" for="metro1005">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 15px; left: -42px;">Ул. Милашенкова</span>
+		            </label>
+		            <input type="checkbox" id="metro1000" lines="13" value="1000" name="metro[]">
+		            <label style="top: 121px; left: 451px;" for="metro1000">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -14px; left: -9px;">Телецентр</span>
+		            </label>
+		            <input type="checkbox" id="metro1004" lines="13" value="1004" name="metro[]">
+		            <label style="top: 121px; left: 502px;" for="metro1004">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 13px; left: -14px; text-align: center;">Ул. академика<br>Королева</span>
+		            </label>
+		            <input type="checkbox" id="metro1083" lines="9 9-1" value="1083" name="metro[]">
+		            <label style="top: 156px; left: 335px;" for="metro1083">
+		                <i class="fa fa-check"></i>
+		                <span>Дмитровская</span>
+		            </label>
+		            <input type="checkbox" id="metro1085" lines="9 9-1" value="1085" name="metro[]">
+		            <label style="top: 183px; left: 335px;" for="metro1085">
+		                <i class="fa fa-check"></i>
+		                <span>Савеловская</span>
+		            </label>
+		            <input type="checkbox" id="metro1088" lines="9" value="1088" name="metro[]">
+		            <label style="top: 225px; left: 356px;" for="metro1088">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -14px; left: -2px;">Менделеевская</span>
+		            </label>
+		            <input type="checkbox" id="metro1155" lines="9 0" value="1155" name="metro[]">
+		            <label style="top: 293px; left: 422px;" for="metro1155">
+		                <i class="fa fa-check"></i>
+		                <span style="left: -91px;">Цветной бульвар</span>
+		            </label>
+		            <input type="checkbox" id="metro1100" lines="9 0" value="1100" name="metro[]">
+		            <label style="top: 398px; left: 407px;" for="metro1100">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: 6px;">Чеховская</span>
+		            </label>
+		            <input type="checkbox" id="metro1076" lines="9 0" value="1076" name="metro[]">
+		            <label style="top: 526px; left: 364px;" for="metro1076">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 3px; left: -61px;">Боровицкая</span>
+		            </label>
+		            <input type="checkbox" id="metro1072" lines="9 0" value="1072" name="metro[]">
+		            <label style="top: 639px; left: 440px;" for="metro1072">
+		                <i class="fa fa-check"></i>
+		                <span>Полянка</span>
+		            </label>
+		            <input type="checkbox" id="metro1125" lines="9" value="1125" name="metro[]">
+		            <label style="top: 678px; left: 440px;" for="metro1125">
+		                <i class="fa fa-check"></i>
+		                <span>Серпуховская</span>
+		            </label>
+		            <input type="checkbox" id="metro1123" lines="9 9-2" value="1123" name="metro[]">
+		            <label style="top: 706px; left: 440px;" for="metro1123">
+		                <i class="fa fa-check"></i>
+		                <span>Тульская</span>
+		            </label>
+		            <input type="checkbox" id="metro1133" lines="9 9-2" value="1133" name="metro[]">
+		            <label style="top: 726px; left: 440px;" for="metro1133">
+		                <i class="fa fa-check"></i>
+		                <span>Нагатинская</span>
+		            </label>
+		            <input type="checkbox" id="metro1080" lines="9 9-2" value="1080" name="metro[]">
+		            <label style="top: 746px; left: 440px;" for="metro1080">
+		                <i class="fa fa-check"></i>
+		                <span>Нагорная</span>
+		            </label>
+		            <input type="checkbox" id="metro1051" lines="9 9-2" value="1051" name="metro[]">
+		            <label style="top: 767px; left: 440px;" for="metro1051">
+		                <i class="fa fa-check"></i>
+		                <span>Нахимовский<br>проспект</span>
+		            </label>
+		            <input type="checkbox" id="metro1047" lines="9 9-2" value="1047" name="metro[]">
+		            <label style="top: 831px; left: 440px;" for="metro1047">
+		                <i class="fa fa-check"></i>
+		                <span>Севастопольская</span>
+		            </label>
+		            <input type="checkbox" id="metro1044" lines="9 9-2" value="1044" name="metro[]">
+		            <label style="top: 855px; left: 440px;" for="metro1044">
+		                <i class="fa fa-check"></i>
+		                <span>Чертановская</span>
+		            </label>
+		            <input type="checkbox" id="metro1042" lines="9 9-2" value="1042" name="metro[]">
+		            <label style="top: 876px; left: 440px;" for="metro1042">
+		                <i class="fa fa-check"></i>
+		                <span>Южная</span>
+		            </label>
+		            <input type="checkbox" id="metro1043" lines="9 9-2" value="1043" name="metro[]">
+		            <label style="top: 898px; left: 440px;" for="metro1043">
+		                <i class="fa fa-check"></i>
+		                <span>Пражская</span>
+		            </label>
+		            <input type="checkbox" id="metro1049" lines="9 9-2" value="1049" name="metro[]">
+		            <label style="top: 917px; left: 440px;" for="metro1049">
+		                <i class="fa fa-check"></i>
+		                <span>Улица академика<br>Янгеля</span>
+		            </label>
+		            <input type="checkbox" id="metro1052" lines="9 9-2" value="1052" name="metro[]">
+		            <label style="top: 949px; left: 440px;" for="metro1052">
+		                <i class="fa fa-check"></i>
+		                <span>Аннино</span>
+		            </label>
+		            <input type="checkbox" id="metro1036" lines="9 9-2" value="1036" name="metro[]">
+		            <label style="top: 976px; left: 440px;" for="metro1036">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -4px; left: 14px;">Бульвар Дмитрия Донского</span>
+		            </label>
+		            <input type="checkbox" id="metro1091" lines="10 10-1" value="1091" name="metro[]">
+		            <label style="top: 171px; left: 447px;" for="metro1091">
+		                <i class="fa fa-check"></i>
+		                <span>Марьина Роща</span>
+		            </label>
+		            <input type="checkbox" id="metro1094" lines="10 10-1" value="1094" name="metro[]">
+		            <label style="top: 195px; left: 447px;" for="metro1094">
+		                <i class="fa fa-check"></i>
+		                <span>Достоевская</span>
+		            </label>
+		            <input type="checkbox" id="metro1157" lines="10 0" value="1157" name="metro[]">
+		            <label style="top: 293px; left: 446px;" for="metro1157">
+		                <i class="fa fa-check"></i>
+		                <span>Трубная</span>
+		            </label>
+		            <input type="checkbox" id="metro1152" lines="10 0" value="1152" name="metro[]">
+		            <label style="top: 334px; left: 565px;" for="metro1152">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -26px; left: -24px; text-align: center;">Сретенский<br>бульвар</span>
+		            </label>
+		            <input type="checkbox" id="metro1134" lines="10  0" value="1134" name="metro[]">
+		            <label style="top: 415px; left: 672px;" for="metro1134">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: -47px;">Чкаловская</span>
+		            </label>
+		            <input type="checkbox" id="metro1126" lines="10 10-2" value="1126" name="metro[]">
+		            <label style="top: 495px; left: 733px;" for="metro1126">
+		                <i class="fa fa-check"></i>
+		                <span style="left: -44px;">Римская</span>
+		            </label>
+		            <input type="checkbox" id="metro1118" lines="10 10-2" value="1118" name="metro[]">
+		            <label style="top: 613px; left: 733px;" for="metro1118">
+		                <i class="fa fa-check"></i>
+		                <span style="left: -73px; text-align: right;">Крестьянская<br>застава</span>
+		            </label>
+		            <input type="checkbox" id="metro1113" lines="10 10-2" value="1113" name="metro[]">
+		            <label style="top: 662px; left: 718px;" for="metro1113">
+		                <i class="fa fa-check"></i>
+		                <span>Дубровка</span>
+		            </label>
+		            <input type="checkbox" id="metro1114" lines="10 10-2" value="1114" name="metro[]">
+		            <label style="top: 687px; left: 693px;" for="metro1114">
+		                <i class="fa fa-check"></i>
+		                <span>Кожуховская</span>
+		            </label>
+		            <input type="checkbox" id="metro1129" lines="10 10-2" value="1129" name="metro[]">
+		            <label style="top: 731px; left: 678px;" for="metro1129">
+		                <i class="fa fa-check"></i>
+		                <span>Печатники</span>
+		            </label>
+		            <input type="checkbox" id="metro1174" lines="10 10-2" value="1174" name="metro[]">
+		            <label style="top: 756px; left: 678px;" for="metro1174">
+		                <i class="fa fa-check"></i>
+		                <span>Волжская</span>
+		            </label>
+		            <input type="checkbox" id="metro1177" lines="10 10-2" value="1177" name="metro[]">
+		            <label style="top: 783px; left: 678px;" for="metro1177">
+		                <i class="fa fa-check"></i>
+		                <span>Люблино</span>
+		            </label>
+		            <input type="checkbox" id="metro1170" lines="10 10-2" value="1170" name="metro[]">
+		            <label style="top: 809px; left: 678px;" for="metro1170">
+		                <i class="fa fa-check"></i>
+		                <span>Братиславская</span>
+		            </label>
+		            <input type="checkbox" id="metro1169" lines="10 10-2" value="1169" name="metro[]">
+		            <label style="top: 835px; left: 678px;" for="metro1169">
+		                <i class="fa fa-check"></i>
+		                <span>Марьино</span>
+		            </label>
+		            <input type="checkbox" id="metro1167" lines="10 10-2" value="1167" name="metro[]">
+		            <label style="top: 861px; left: 678px;" for="metro1167">
+		                <i class="fa fa-check"></i>
+		                <span>Борисово</span>
+		            </label>
+		            <input type="checkbox" id="metro1165" lines="10 10-2" value="1165" name="metro[]">
+		            <label style="top: 887px; left: 678px;" for="metro1165">
+		                <i class="fa fa-check"></i>
+		                <span>Шипиловская</span>
+		            </label>
+		            <input type="checkbox" id="metro1168" lines="10 10-2" value="1168" name="metro[]">
+		            <label style="top: 921px; left: 679px;" for="metro1168">
+		                <i class="fa fa-check"></i>
+		                <span>Зябликово</span>
+		            </label>
+		            <input type="checkbox" id="metro1112" lines="11" value="1112" name="metro[]">
+		            <label style="top: 813px; left: 497px;" for="metro1112">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -14px; left: -11px;">Варшавская</span>
+		            </label>
+		            <input type="checkbox" id="metro1048" lines="11" value="1048" name="metro[]">
+		            <label style="top: 813px; left: 422px;" for="metro1048">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 14px; left: -42px;">Каховская</span>
+		            </label>
+		            <input type="checkbox" id="metro1035" lines="12" value="1035" name="metro[]">
+		            <label style="top: 993px; left: 423px;" for="metro1035">
+		                <i class="fa fa-check"></i>
+		                <span>Улица Старокачаловская</span>
+		            </label>
+		            <input type="checkbox" id="metro1031" lines="12" value="1031" name="metro[]">
+		            <label style="top: 1014px; left: 423px;" for="metro1031">
+		                <i class="fa fa-check"></i>
+		                <span>Улица Скобелевская</span>
+		            </label>
+		            <input type="checkbox" id="metro1032" lines="12" value="1032" name="metro[]">
+		            <label style="top: 1033px; left: 388px;" for="metro1032">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 0px; left: 14px;">Бульвар адмирала Ушакова</span>
+		            </label>
+		            <input type="checkbox" id="metro1033" lines="12" value="1033" name="metro[]">
+		            <label style="top: 1033px; left: 312px;" for="metro1033">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -14px; left: -37px;">Улица Горчакова</span>
+		            </label>
+		            <input type="checkbox" id="metro1034" lines="12" value="1034" name="metro[]">
+		            <label style="top: 1033px; left: 246px;" for="metro1034">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -14px; left: -74px;">Бунинская аллея</span>
+		            </label>
+		            <input type="checkbox" id="metro1070" lines="4 4-2" value="1070" name="metro[]">
+		            <label style="top: 390px; left: 137px;" for="metro1070">
+		                <i class="fa fa-check"></i>
+		                <span>Международная</span>
+		            </label>
+		            <input type="checkbox" id="metro1069" lines="4 4-2" value="1069" name="metro[]">
+		            <label style="top: 412px; left: 137px;" for="metro1069">
+		                <i class="fa fa-check"></i>
+		                <span>Выставочная</span>
+		            </label>
+		            <input type="checkbox" id="metro1068" lines="8a 8-2" value="1068" name="metro[]">
+		            <label style="top: 434px; left: 137px;" for="metro1068">
+		                <i class="fa fa-check"></i>
+		                <span>Деловой центр</span>
+		            </label>
+		            <input type="checkbox" id="metro1096" lines="2 0" value="1096" name="metro[]">
+		            <label style="top: 346px; left: 332px;" for="metro1096">
+		                <i class="fa fa-check"></i>
+		                <span style="top: -7px; left: 14px;">Маяковская</span>
+		            </label>
+		            <input type="checkbox" id="metro1172" lines="7 7-2" value="1172" name="metro[]">
+		            <label style="top: 763px; left: 790px;" for="metro1172">
+		                <i class="fa fa-check"></i>
+		                <span>Выхино</span>
+		            </label>
+		            <input type="checkbox" id="metro1050" lines="12" value="1050" name="metro[]">
+		            <label style="top: 973px; left: 386px;" for="metro1050">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 6px; left: -75px;">Лесопарковая</span>
+		            </label>
+		            <input type="checkbox" id="metro1039" lines="12" value="1039" name="metro[]">
+		            <label style="top: 954px; left: 350px;" for="metro1039">
+		                <i class="fa fa-check"></i>
+		                <span style="top: 6px; left: -86px;">Битцевский парк</span>
+		            </label>
 		        </div>
 		    </div>
-		
 		</div>
 		<!--content-->
 		<footer id="footer">
