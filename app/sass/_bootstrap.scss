@@ -1,0 +1,56 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+@import "variables";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+// Components
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/pager";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/labels";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/badges";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/media";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/panels";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/wells";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/close";
+
+// Components w/ JavaScript
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
+
+// Utility classes
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "app/libs/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";

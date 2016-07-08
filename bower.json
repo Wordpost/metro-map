@@ -1,0 +1,28 @@
+{
+  "name": "Template",
+  "description": "Template for web",
+  "main": "index.js",
+  "keywords": [
+    "dev"
+  ],
+  "authors": [
+    "JSMan"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate-sass": "^0.6.6",
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome-sass": "^4.6.2",
+    "normalize-css": "^4.0.0",
+    "fancyBox": "^2.1.5",
+    "gilbitron/carouFredSel": "^6.2.1"
+  }
+}
